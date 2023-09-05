@@ -13,7 +13,7 @@ short_description: This is my test module
 
 # If this is part of a collection, you need to use semantic versioning,
 # i.e. the version is of the form "2.5.0" and not "2.4".
-version_added: "1.0.0"
+version_added: "1.0.1"
 
 description: This is my longer description explaining my test module.
 
@@ -114,9 +114,9 @@ def run_module():
     # if module.params['new']:
     #     result['changed'] = True
 
-    if not(os.path.exists(module.params['path'])
-    and os.path.isfile(module.params['path'])
-    and open(module.params['path'],'r').read() == module.params['content']):
+    if not (os.path.exists(module.params['path']) and
+            os.path.isfile(module.params['path']) and
+            open(module.params['path'], 'r').read() == module.params['content']):
         try:
             with open(module.params['path'], 'w') as file:
                 file.write(module.params['content'])
