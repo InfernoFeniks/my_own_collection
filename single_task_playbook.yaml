@@ -1,0 +1,9 @@
+---
+- name: Module testing
+  hosts: localhost
+  tasks:
+
+  - name: Create file with context
+    infernofeniks.yandex_cloud_elk.my_own_module:
+      path: './feniks_playbook.txt'
+      content: "This file create by playbook"
