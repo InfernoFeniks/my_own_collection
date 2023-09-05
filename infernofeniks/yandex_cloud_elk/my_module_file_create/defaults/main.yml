@@ -1,0 +1,4 @@
+---
+# defaults file for my_module_file_create
+path: './my_file.txt'
+content: "Hello from InfernoFeniks (test content)"

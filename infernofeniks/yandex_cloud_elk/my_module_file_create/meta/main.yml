@@ -1,0 +1,22 @@
+galaxy_info:
+  role_name: my_module_file_create
+  namespace: infernofeniks
+  author: Maxim Kuzin
+  company: InfernoFeniks
+  description: Role to use my first module
+
+  license: MIT
+
+  min_ansible_version: "2.14"
+
+  platforms:
+    - name: Debian
+      versions:
+        - bullseye
+        - buster
+
+  galaxy_tags:
+    - module
+    - file
+
+dependencies: []
